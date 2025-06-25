@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEK2day - AI-Powered Applications & Content</title>
+    <!-- Google Fonts: Orbitron for headings, Roboto for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom Tailwind Configuration (optional, but good for custom fonts) */
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll on small devices */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff; /* Default text color */
+            background-color: #000000; /* Solid black fallback */
+            /* Updated background-image URL to a relative path for local hosting/deployment */
+            background-image: url('Honeycomb background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Makes the background parallax-like */
+        }
+
+        /* Override specific Tailwind defaults or add custom classes */
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .text-red-t2d {
+            color: #FF0000; /* Your specific red for the logo/accents */
+        }
+
+        .hover-red-underline:hover {
+            text-decoration: underline;
+            text-decoration-color: #FF0000;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: rgba(10, 10, 10, 0.9); /* Slightly transparent dark background for dropdown */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+            z-index: 100;
+            border-radius: 0.5rem; /* Rounded corners */
+            padding: 0.5rem 0;
+            /* margin-top: 0.5rem; -- Removed this to prevent the gap issue */
+            left: 50%; /* Center the dropdown under its parent */
+            transform: translateX(-50%); /* Adjust for perfect centering */
+            white-space: nowrap; /* Prevent wrapping of menu items */
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-item {
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            display: block;
+            text-align: center; /* Center dropdown items */
+            font-size: 0.9rem; /* Slightly smaller font for dropdowns */
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgba(255, 0, 0, 0.2); /* Subtle red hover */
+            color: #ffffff;
+        }
+
+        /* Ensure responsive padding for content */
+        .content-section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 768px) {
+            .content-section {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .content-section {
+                padding-left: 8rem;
+                padding-right: 8rem;
+            }
+        }
+
+        /* Basic modal styling for alerts/confirmations instead of alert() */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #333;
+            margin: auto;
+            padding: 2.5rem;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 0.75rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="w-full py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-black bg-opacity-70">
+        <!-- T2D Logo -->
+        <div class="flex items-center">
+            <!-- Replaced text logo with image logo -->
+            <a href="#">
+                <!-- Changed src to relative path for local testing and deployment -->
+                <img src="T2D Website logo.png" alt="T2D Logo" class="h-8 md:h-10 lg:h-12 object-contain">
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex space-x-6 md:space-x-12 lg:space-x-16 text-white font-roboto font-medium text-lg">
+            <!-- Removed ABOUT link -->
+
+            <div class="relative nav-item">
+                <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
+                    PRODUCTS &#9660; <!-- Down arrow icon -->
+                </a>
+                <div class="dropdown-menu">
+                    <a href="https://ceorater.com" target="_blank" class="dropdown-item">CEORater</a>
+                    <a href="https://finmodel.app" target="_blank" class="dropdown-item">FinModel</a>
+                    <a href="https://promptgenius.com" target="_blank" class="dropdown-item">PromptGenius</a>
+                </div>
+            </div>
+
+            <div class="relative nav-item">
+                <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
+                    CONTENT &#9660; <!-- Down arrow icon -->
+                </a>
+                <div class="dropdown-menu">
+                    <a href="https://tek2day.substack.com" target="_blank" class="dropdown-item">T2D Substack</a>
+                    <a href="https://payhip.com/TEK2day" target="_blank" class="dropdown-item">Payhip Storefront</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow flex items-center justify-center text-center py-16 content-section">
+        <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-3xl border border-gray-700 shadow-lg">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-6 leading-tight">
+                AI-Powered Solutions for Tomorrow's Innovators.
+            </h1>
+            <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-8">
+                TEK2day builds AI-powered applications and produces content. Our applications include vertical applications (CEORater, FinModel), and horizontal (PromptGenius). T2D content provides thought leadership at the intersection of technology and the capital markets.
+            </p>
+            <!-- Removed "EXPLORE OUR AI SUITE" button -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full py-4 px-4 md:px-8 lg:px-16 text-center text-gray-500 text-sm bg-black bg-opacity-70 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
+        <div class="text-white text-base">2025 | TEK2day</div>
+        <div class="flex space-x-4">
+            <a href="https://www.youtube.com/@TEK2day" target="_blank" aria-label="YouTube" class="text-gray-400 hover:text-red-t2d transition-colors duration-200">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/tek2dayus/" target="_blank" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-500 transition-colors duration-200">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Simple Modal for potential messages/alerts -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modalMessage" class="text-white text-lg"></p>
+        </div>
+    </div>
+
+    <script>
+        // Placeholder for any future JavaScript interactions
+        document.addEventListener('DOMContentLoaded', () => {
+            const learnMoreBtn = document.getElementById('learnMoreBtn'); // This element is now removed, so this will not find it.
+            const myModal = document.getElementById('myModal');
+            const modalMessage = document.getElementById('modalMessage');
+            const closeButton = document.querySelector('.close-button');
+
+            // The click event listener for learnMoreBtn is effectively removed
+            // since the button itself is removed from the HTML.
+
+            // Close the modal when clicking on the close button
+            closeButton.addEventListener('click', () => {
+                myModal.style.display = 'none';
+            });
+
+            // Close the modal when clicking outside of it
+            window.addEventListener('click', (event) => {
+                if (event.target === myModal) {
+                    myModal.style.display = 'none';
+                }
+            });
+
+            // Simple responsive dropdown handling for smaller screens (optional, as hover works on desktop)
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                const trigger = item.querySelector('a');
+                const menu = item.querySelector('.dropdown-menu');
+
+                if (trigger && menu) {
+                    trigger.addEventListener('click', (e) => {
+                        // On smaller screens, prevent navigation and toggle dropdown
+                        if (window.innerWidth < 768) { // Adjust breakpoint as needed
+                            e.preventDefault();
+                            // Close other dropdowns
+                            navItems.forEach(otherItem => {
+                                const otherMenu = otherItem.querySelector('.dropdown-menu');
+                                if (otherMenu && otherMenu !== menu) {
+                                    otherMenu.style.display = 'none';
+                                }
+                            });
+                            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+                        }
+                        // For desktop, hover CSS handles it, so allow link default
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
