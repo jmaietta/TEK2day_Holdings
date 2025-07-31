@@ -71,16 +71,16 @@
         .dropdown-menu {
             display: none;
             position: absolute;
-            background-color: rgba(10, 10, 10, 0.9); /* Slightly transparent dark background for dropdown */
-            min-width: 160px;
+            background-color: rgba(10, 10, 10, 0.95); /* Slightly darker for better readability */
+            min-width: 220px; /* Increased width for category headers */
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
             z-index: 100;
             border-radius: 0.5rem; /* Rounded corners */
-            padding: 0.5rem 0;
-            /* margin-top: 0.5rem; -- Removed this to prevent the gap issue */
+            padding: 0.75rem 0;
             left: 50%; /* Center the dropdown under its parent */
             transform: translateX(-50%); /* Adjust for perfect centering */
             white-space: nowrap; /* Prevent wrapping of menu items */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
         }
 
         .nav-item:hover .dropdown-menu {
@@ -92,14 +92,34 @@
             padding: 0.75rem 1.5rem;
             text-decoration: none;
             display: block;
-            text-align: center; /* Center dropdown items */
+            text-align: left; /* Left align for better readability with categories */
             font-size: 0.9rem; /* Slightly smaller font for dropdowns */
             transition: background-color 0.2s ease, color 0.2s ease;
+            margin-left: 1rem; /* Indent product items under categories */
         }
 
         .dropdown-item:hover {
             background-color: rgba(255, 0, 0, 0.2); /* Subtle red hover */
             color: #ffffff;
+        }
+
+        .dropdown-category {
+            color: #FF0000; /* Red color for category headers */
+            padding: 0.5rem 1.5rem 0.25rem 1.5rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 0.25rem;
+        }
+
+        .dropdown-category:not(:first-child) {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         /* Ensure responsive padding for content */
@@ -176,9 +196,13 @@
                 <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
                     PRODUCTS ▼ </a>
                 <div class="dropdown-menu">
+                    <div class="dropdown-category">Enterprise</div>
                     <a href="https://ceorater.com" target="_blank" class="dropdown-item">CEORater</a>
                     <a href="https://finmodel.app" target="_blank" class="dropdown-item">FinModel</a>
+                    
+                    <div class="dropdown-category">Consumer</div>
                     <a href="https://getpromptgenius.com" target="_blank" class="dropdown-item">PromptGenius</a>
+                    <a href="https://www.forgebodyfit.com/" target="_blank" class="dropdown-item">Forge Fitness</a>
                 </div>
             </div>
 
