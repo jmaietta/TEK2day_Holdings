@@ -140,6 +140,15 @@
             }
         }
 
+        /* Hide all sections by default */
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: flex;
+        }
+
         /* Basic modal styling for alerts/confirmations instead of alert() */
         .modal {
             display: none; /* Hidden by default */
@@ -180,13 +189,23 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        /* Profile image styling */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #FF0000;
+            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
 
     <header class="w-full py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-black bg-opacity-70">
         <div class="flex items-center">
-            <a href="#">
+            <a href="#" onclick="showSection('home'); return false;">
                 <img src="T2D Website logo.png" alt="T2D Logo" class="h-8 md:h-10 lg:h-12 object-contain">
             </a>
         </div>
@@ -194,7 +213,8 @@
         <nav class="flex space-x-6 md:space-x-12 lg:space-x-16 text-white font-roboto font-medium text-lg">
             <div class="relative nav-item">
                 <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
-                    PRODUCTS ▼ </a>
+                    PRODUCTS ▼
+                </a>
                 <div class="dropdown-menu">
                     <div class="dropdown-category">Enterprise</div>
                     <a href="https://dash.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Dashboard</a>
@@ -209,7 +229,8 @@
 
             <div class="relative nav-item">
                 <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
-                    CONTENT ▼ </a>
+                    CONTENT ▼
+                </a>
                 <div class="dropdown-menu">
                     <a href="https://newsletter.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Newsletter</a>
                     <a href="https://pulse.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Pulse</a>
@@ -217,18 +238,51 @@
                     <a href="https://shoot-mma.com/" target="_blank" class="dropdown-item">Shoot MMA</a>
                 </div>
             </div>
+
+            <a href="#" onclick="showSection('about'); return false;" class="hover-red-underline transition-colors duration-200 cursor-pointer">
+                ABOUT
+            </a>
         </nav>
     </header>
 
     <main class="flex-grow flex items-center justify-center text-center py-16 content-section">
-        <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-3xl border border-gray-700 shadow-lg">
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-6 leading-tight">
-                AI-Powered Solutions for Today's Innovators.
-            </h1>
-            <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-8">
-                TEK2day (T2D) Holdings builds applications and produces content. Applications include Enterprise (CEORater and FinModel), and Consumer (PromptGenius, Forge Fitness). T2D content provides thought leadership at the intersection of Technology and the Capital Markets.
-            </p>
+        <!-- Home Section -->
+        <div id="home-section" class="page-section active">
+            <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-3xl border border-gray-700 shadow-lg">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-6 leading-tight">
+                    AI-Powered Solutions for Today's Innovators.
+                </h1>
+                <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-8">
+                    TEK2day (T2D) Holdings builds applications and produces content. Applications include Enterprise (CEORater and FinModel), and Consumer (PromptGenius, Forge Fitness). T2D content provides thought leadership at the intersection of Technology and the Capital Markets.
+                </p>
             </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about-section" class="page-section">
+            <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-4xl border border-gray-700 shadow-lg">
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-8 leading-tight">
+                    About
+                </h1>
+                
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                    <!-- Profile Image -->
+                    <div class="flex-shrink-0">
+                        <img src="JM_Potrait_2.jpg" alt="Jon Maietta" class="profile-image">
+                    </div>
+                    
+                    <!-- Bio Text -->
+                    <div class="text-left">
+                        <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-4">
+                            <a href="https://www.linkedin.com/in/jonathanmaietta/" target="_blank" class="text-red-t2d hover:underline font-bold">Jon Maietta</a> is TEK2day ("T2D", "TEK2day") Holdings' founder & CEO. T2D owns and operates FinTech products and services, including <a href="https://www.ceorater.com/" target="_blank" class="text-red-t2d hover:underline">CEORater</a>, <a href="https://pulse.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Pulse</a>, <a href="https://dash.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Dashboard</a>, <a href="https://newsletter.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Newsletter</a>, and <a href="https://finmodel.app/" target="_blank" class="text-red-t2d hover:underline">FinModel</a>.
+                        </p>
+                        <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed">
+                            Prior to TEK2day, Jon led Solera's (the leading InsurTech company) global Corporate Development organization. Prior to Solera, Jon covered Enterprise Software, FinTech and Tech-Enabled Services as an Equity Research Analyst with technology investment bank Needham & Company, LLC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="w-full py-4 px-4 md:px-8 lg:px-16 text-center text-gray-500 text-sm bg-black bg-opacity-70 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
@@ -251,15 +305,24 @@
     </div>
 
     <script>
-        // Placeholder for any future JavaScript interactions
+        // Function to show different sections
+        function showSection(sectionName) {
+            // Hide all sections
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show the selected section
+            const targetSection = document.getElementById(sectionName + '-section');
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            const learnMoreBtn = document.getElementById('learnMoreBtn'); // This element is now removed, so this will not find it.
             const myModal = document.getElementById('myModal');
             const modalMessage = document.getElementById('modalMessage');
             const closeButton = document.querySelector('.close-button');
-
-            // The click event listener for learnMoreBtn is effectively removed
-            // since the button itself is removed from the HTML.
 
             // Close the modal when clicking on the close button
             closeButton.addEventListener('click', () => {
@@ -273,7 +336,7 @@
                 }
             });
 
-            // Simple responsive dropdown handling for smaller screens (optional, as hover works on desktop)
+            // Simple responsive dropdown handling for smaller screens
             const navItems = document.querySelectorAll('.nav-item');
             navItems.forEach(item => {
                 const trigger = item.querySelector('a');
@@ -282,7 +345,7 @@
                 if (trigger && menu) {
                     trigger.addEventListener('click', (e) => {
                         // On smaller screens, prevent navigation and toggle dropdown
-                        if (window.innerWidth < 768) { // Adjust breakpoint as needed
+                        if (window.innerWidth < 768) {
                             e.preventDefault();
                             // Close other dropdowns
                             navItems.forEach(otherItem => {
@@ -293,7 +356,6 @@
                             });
                             menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
                         }
-                        // For desktop, hover CSS handles it, so allow link default
                     });
                 }
             });
@@ -301,7 +363,3 @@
     </script>
 </body>
 </html>
-
-
-
-
