@@ -13,11 +13,13 @@ TEK2day (T2D) Holdings builds applications and produces content at the intersect
 - FinModel: https://finmodel.app/
 - PromptGenius: https://getpromptgenius.com/
 - Forge Fitness: https://forgebodyfit.com/
+- FinClaw: https://finclaw.dev/
 
 ## Portfolio
 ### Enterprise
 - **CEORater** — CEO performance data & analytics
 - **FinModel** — financial model automation
+- **FinClaw** — AI Agent skills registry
 
 ### Consumer
 - **PromptGenius** - Chrome extension that helps you optimize your AI prompts
