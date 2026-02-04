@@ -22,8 +22,8 @@ TEK2day (T2D) Holdings builds applications and produces content at the intersect
 - **FinClaw** — AI Agent skills registry
 
 ### Consumer
-- **PromptGenius** - Chrome extension that helps you optimize your AI prompts
-- **Forge Fitness** - Exercise and nutrition app
+- **PromptGenius** — Chrome extension that helps you optimize your AI prompts
+- **Forge Fitness** — Exercise and nutrition app
 
 ### Content
 - **T2D Newsletter** — TEK2day covers Technology where it intersects with the Capital Markets
