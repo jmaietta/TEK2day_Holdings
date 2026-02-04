@@ -33,5 +33,8 @@ TEK2day (T2D) Holdings builds applications and produces content at the intersect
 TEK2day Holdings is founded and led by **Jon Maietta**.
 - LinkedIn: https://www.linkedin.com/in/jonathanmaietta/
 
+## Contact
+- Email: info@tek2day.com
+
 ## Repositories
 This repo is the “home” repository for TEK2day Holdings.
