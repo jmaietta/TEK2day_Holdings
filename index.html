@@ -1,366 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEK2day - AI-Powered Applications & Content</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>TEK2day — AI-Powered Platforms &amp; Products</title>
+  <meta name="description" content="TEK2day Holdings builds AI-powered platforms and products, including TEK2day Finance, Kilby, CEORater, TEK2day Earnings Calendar, EDGAR Watcher, TEK2day Pulse and the TEK2day Newsletter.">
+  <link rel="canonical" href="https://tek2dayholdings.com/">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TEK2day">
+  <meta property="og:url" content="https://tek2dayholdings.com/">
+  <meta property="og:title" content="TEK2day — AI-Powered Platforms &amp; Products">
+  <meta property="og:description" content="TEK2day Holdings builds AI-powered platforms and products, including TEK2day Finance, Kilby, CEORater, TEK2day Earnings Calendar, EDGAR Watcher, TEK2day Pulse and the TEK2day Newsletter.">
+  <meta property="og:image" content="https://tek2dayholdings.com/android-chrome-512x512.png">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tek2dayholdings.com/">
-    <meta property="og:title" content="TEK2day - AI-Powered Applications & Content">
-    <meta property="og:description" content="AI-powered applications and content offerings">
-    <meta property="og:image" content="https://tek2dayholdings.com/android-chrome-512x512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TEK2day — AI-Powered Platforms &amp; Products">
+  <meta name="twitter:description" content="TEK2day Holdings builds AI-powered platforms and products, including TEK2day Finance, Kilby, CEORater, TEK2day Earnings Calendar, EDGAR Watcher, TEK2day Pulse and the TEK2day Newsletter.">
+  <meta name="twitter:image" content="https://tek2dayholdings.com/android-chrome-512x512.png">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://tek2dayholdings.com/">
-    <meta property="twitter:title" content="TEK2day - AI-Powered Applications & Content">
-    <meta property="twitter:description" content="AI-powered applications and content solutions for modern businesses">
-    <meta property="twitter:image" content="https://tek2dayholdings.com/android-chrome-512x512.png">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Custom Tailwind Configuration (optional, but good for custom fonts) */
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Archivo:wght@500;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll on small devices */
-        }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "TEK2day",
+        "url": "https://tek2dayholdings.com/",
+        "description": "TEK2day Holdings builds AI-powered platforms and products, including TEK2day Finance, Kilby, CEORater, TEK2day Earnings Calendar, EDGAR Watcher, TEK2day Pulse and the TEK2day Newsletter.",
+        "publisher": { "@id": "https://tek2dayholdings.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://tek2dayholdings.com/#org",
+        "name": "TEK2day Holdings",
+        "alternateName": "TEK2day",
+        "url": "https://tek2dayholdings.com/",
+        "logo": "https://tek2dayholdings.com/android-chrome-512x512.png",
+        "founder": { "@id": "https://tek2dayholdings.com/#founder" },
+        "sameAs": [
+          "https://www.linkedin.com/company/tek2dayholdings/",
+          "https://www.youtube.com/@TEK2day"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tek2dayholdings.com/#founder",
+        "name": "Jon Maietta",
+        "jobTitle": "Founder & CEO",
+        "image": "https://tek2dayholdings.com/JM_Potrait_2.jpg",
+        "worksFor": { "@id": "https://tek2dayholdings.com/#org" },
+        "sameAs": [
+          "https://www.linkedin.com/in/jonathanmaietta/"
+        ]
+      }
+    ]
+  }
+  </script>
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #ffffff; /* Default text color */
-            background-color: #000000; /* Solid black fallback */
-            /* Updated background-image URL to a relative path for local hosting/deployment */
-            background-image: url('Honeycomb background.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Makes the background parallax-like */
-        }
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --panel: #070705;
+      --panel-2: #0c0c09;
+      --line: #1c1b14;
+      --line-2: #2b2a1e;
+      --text: #e8e6df;
+      --muted: #8a8878;
+      --amber: #ff9f1c;
+      --amber-dim: #b97a14;
+      --amber-glow: rgba(255, 159, 28, 0.14);
+      --green: #2fd47f;
+      --mono: "IBM Plex Mono", Consolas, monospace;
+      --sans: "Archivo", system-ui, sans-serif;
+      --orbitron: "Orbitron", sans-serif;
+    }
 
-        /* Override specific Tailwind defaults or add custom classes */
-        .font-orbitron {
-            font-family: 'Orbitron', sans-serif;
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 14px;
+    }
 
-        .text-red-t2d {
-            color: #FF0000; /* Your specific red for the logo/accents */
-        }
+    a { color: inherit; text-decoration: none; }
 
-        .hover-red-underline:hover {
-            text-decoration: underline;
-            text-decoration-color: #FF0000;
-        }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
 
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: rgba(10, 10, 10, 0.95); /* Slightly darker for better readability */
-            min-width: 220px; /* Increased width for category headers */
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-            z-index: 100;
-            border-radius: 0.5rem; /* Rounded corners */
-            padding: 0.75rem 0;
-            left: 50%; /* Center the dropdown under its parent */
-            transform: translateX(-50%); /* Adjust for perfect centering */
-            white-space: nowrap; /* Prevent wrapping of menu items */
-            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-        }
+    /* ───── top bar ───── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(6px);
+    }
 
-        .nav-item:hover .dropdown-menu {
-            display: block;
-        }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 50px;
+    }
 
-        .dropdown-item {
-            color: #ffffff;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            display: block;
-            text-align: left; /* Left align for better readability with categories */
-            font-size: 0.9rem; /* Slightly smaller font for dropdowns */
-            transition: background-color 0.2s ease, color 0.2s ease;
-            margin-left: 1rem; /* Indent product items under categories */
-        }
+    .brand { display: flex; align-items: center; gap: 10px; }
 
-        .dropdown-item:hover {
-            background-color: rgba(255, 0, 0, 0.2); /* Subtle red hover */
-            color: #ffffff;
-        }
+    .brand img {
+      width: 26px;
+      height: 26px;
+      background: #fff;
+      object-fit: contain;
+    }
 
-        .dropdown-category {
-            color: #FF0000; /* Red color for category headers */
-            padding: 0.5rem 1.5rem 0.25rem 1.5rem;
-            font-weight: 700;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            display: block;
-            text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 0.25rem;
-        }
+    .brand strong {
+      font-family: var(--orbitron);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #fff;
+      white-space: nowrap;
+    }
 
-        .dropdown-category:not(:first-child) {
-            margin-top: 0.75rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
+    .topbar nav {
+      display: flex;
+      gap: 22px;
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
 
-        /* Ensure responsive padding for content */
-        .content-section {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-        @media (min-width: 768px) {
-            .content-section {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-        }
-        @media (min-width: 1024px) {
-            .content-section {
-                padding-left: 8rem;
-                padding-right: 8rem;
-            }
-        }
+    .topbar nav a:hover { color: var(--amber); }
 
-        /* Hide all sections by default */
-        .page-section {
-            display: none;
-        }
+    /* ───── hero ───── */
+    .hero {
+      padding: 88px 0 72px;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(ellipse 70% 55% at 50% 0%, rgba(255, 159, 28, 0.07), transparent),
+        var(--bg);
+      text-align: center;
+    }
 
-        .page-section.active {
-            display: flex;
-        }
+    .kicker {
+      color: var(--amber-dim);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
 
-        /* Basic modal styling for alerts/confirmations instead of alert() */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-            justify-content: center;
-            align-items: center;
-        }
+    .hero h1 {
+      font-family: var(--orbitron);
+      font-weight: 900;
+      font-size: clamp(40px, 7vw, 76px);
+      letter-spacing: 0.04em;
+      color: #fff;
+      line-height: 1.05;
+    }
 
-        .modal-content {
-            background-color: #333;
-            margin: auto;
-            padding: 2.5rem;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            border-radius: 0.75rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            text-align: center;
-        }
+    .hero h1 .accent { color: var(--amber); }
 
-        .close-button {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+    .hero-rule {
+      width: 64px;
+      height: 2px;
+      margin: 28px auto;
+      background: var(--amber);
+    }
 
-        .close-button:hover,
-        .close-button:focus {
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-        }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.8;
+    }
 
-        /* Profile image styling */
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #FF0000;
-            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
-        }
-    </style>
+    /* ───── sections ───── */
+    section { padding: 56px 0 8px; }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-head h2 {
+      color: var(--amber-dim);
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+
+    /* ───── platform cards (large) ───── */
+    .platforms { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .platform-card {
+      display: block;
+      border: 1px solid var(--line-2);
+      background: var(--panel);
+      padding: 28px 26px;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .platform-card:hover {
+      border-color: var(--amber-dim);
+      background: var(--panel-2);
+      box-shadow: 0 0 0 1px var(--amber-glow);
+    }
+
+    .platform-card .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 3px 8px;
+      border: 1px solid var(--amber-dim);
+      color: var(--amber);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .platform-card h3 {
+      font-family: var(--sans);
+      font-size: 25px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .platform-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .card-link { color: var(--amber); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
+    .card-link::after { content: " ↗"; }
+
+    /* ───── product / content cards ───── */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .cards-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card {
+      display: block;
+      border: 1px solid var(--line);
+      border-left: 2px solid transparent;
+      background: var(--panel);
+      padding: 20px 18px;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .card:hover {
+      border-left-color: var(--amber);
+      border-color: var(--line-2);
+      background: var(--panel-2);
+    }
+
+    .card h3 {
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      min-height: 44px;
+    }
+
+    .card .domain { color: var(--amber-dim); font-size: 12px; letter-spacing: 0.04em; }
+    .card:hover .domain { color: var(--amber); }
+
+    /* ───── founder ───── */
+    .founder-card {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 28px;
+      border: 1px solid var(--line-2);
+      background: var(--panel);
+      padding: 28px;
+    }
+
+    .founder-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 1px solid var(--line-2);
+      filter: saturate(0.9);
+    }
+
+    .founder-card h3 {
+      font-family: var(--sans);
+      font-size: 21px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .founder-card .role {
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .founder-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+
+    .founder-card p a { color: var(--amber); }
+    .founder-card p a:hover { text-decoration: underline; }
+
+    /* ───── footer ───── */
+    footer {
+      margin-top: 64px;
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .footer-inner .links { display: flex; gap: 18px; margin-left: auto; }
+    .footer-inner a:hover { color: var(--amber); }
+    .dot {
+      width: 7px; height: 7px; border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 10px rgba(47, 212, 127, 0.7);
+    }
+
+    /* ───── mobile ───── */
+    @media (max-width: 860px) {
+      .platforms, .cards { grid-template-columns: 1fr; }
+      .hero { padding: 64px 0 52px; }
+      .founder-card { grid-template-columns: 1fr; }
+      .founder-card img { width: 140px; height: 140px; }
+      .topbar nav { gap: 14px; }
+    }
+  </style>
 </head>
-<body class="flex flex-col min-h-screen">
+<body>
 
-    <header class="w-full py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-black bg-opacity-70">
-        <div class="flex items-center">
-            <a href="#" onclick="showSection('home'); return false;">
-                <img src="T2D Website logo.png" alt="T2D Logo" class="h-8 md:h-10 lg:h-12 object-contain">
-            </a>
-        </div>
-
-        <nav class="flex space-x-6 md:space-x-12 lg:space-x-16 text-white font-roboto font-medium text-lg">
-            <div class="relative nav-item">
-                <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
-                    PRODUCTS ▼
-                </a>
-                <div class="dropdown-menu">
-                    <div class="dropdown-category">Enterprise</div>
-                    <a href="https://ceorater.com" target="_blank" class="dropdown-item">CEORater</a>
-                    <a href="https://agentkilby.com" target="_blank" class="dropdown-item">Kilby</a>
-                    <a href="https://edgar.tek2dayholdings.com/" target="_blank" class="dropdown-item">EDGAR Watcher</a>
-                    <a href="https://dash.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Dashboard</a>
-
-                    <div class="dropdown-category">Consumer</div>
-                    <a href="https://agentkilby.com" target="_blank" class="dropdown-item">Kilby</a>
-                    <a href="https://getpromptgenius.com" target="_blank" class="dropdown-item">PromptGenius</a>
-                </div>
-            </div>
-
-            <div class="relative nav-item">
-                <a href="#" class="hover-red-underline transition-colors duration-200 cursor-pointer flex items-center">
-                    CONTENT ▼
-                </a>
-                <div class="dropdown-menu">
-                    <a href="https://newsletter.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Newsletter</a>
-                    <a href="https://pulse.tek2dayholdings.com/" target="_blank" class="dropdown-item">T2D Pulse</a>
-                    <a href="https://payhip.com/TEK2day" target="_blank" class="dropdown-item">Payhip Storefront</a>
-                </div>
-            </div>
-
-            <a href="#" onclick="showSection('about'); return false;" class="hover-red-underline transition-colors duration-200 cursor-pointer">
-                ABOUT
-            </a>
-        </nav>
-    </header>
-
-    <main class="flex-grow flex items-center justify-center text-center py-16 content-section">
-        <!-- Home Section -->
-        <div id="home-section" class="page-section active">
-            <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-3xl border border-gray-700 shadow-lg">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-6 leading-tight">
-                    AI-Powered Solutions for Today's Innovators.
-                </h1>
-                <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-8">
-                    TEK2day (T2D) Holdings builds applications and produces content. Applications include Enterprise (CEORater, EDGAR Watcher, Kilby, and T2D Dashboard), and Consumer (PromptGenius). T2D content provides thought leadership at the intersection of Technology and the Capital Markets.
-                </p>
-            </div>
-        </div>
-
-        <!-- About Section -->
-        <div id="about-section" class="page-section">
-            <div class="bg-black bg-opacity-60 rounded-xl p-8 md:p-12 lg:p-16 max-w-4xl border border-gray-700 shadow-lg">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-orbitron font-bold text-white mb-8 leading-tight">
-                    About
-                </h1>
-                
-                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                    <!-- Profile Image -->
-                    <div class="flex-shrink-0">
-                        <img src="JM_Potrait_2.jpg" alt="Jon Maietta" class="profile-image">
-                    </div>
-                    
-                    <!-- Bio Text -->
-                    <div class="text-left">
-                        <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed mb-4">
-                            <a href="https://www.linkedin.com/in/jonathanmaietta/" target="_blank" class="text-red-t2d hover:underline font-bold">Jon Maietta</a> is TEK2day ("T2D", "TEK2day") Holdings' founder & CEO. T2D owns and operates FinTech products and services, including <a href="https://www.ceorater.com/" target="_blank" class="text-red-t2d hover:underline">CEORater</a>, <a href="https://edgar.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">EDGAR Watcher</a>, <a href="https://agentkilby.com" target="_blank" class="text-red-t2d hover:underline">Kilby</a>, <a href="https://pulse.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Pulse</a>, <a href="https://dash.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Dashboard</a>, and <a href="https://newsletter.tek2dayholdings.com/" target="_blank" class="text-red-t2d hover:underline">T2D Newsletter</a>.
-                        </p>
-                        <p class="text-lg md:text-xl font-roboto text-gray-300 leading-relaxed">
-                            Prior to TEK2day, Jon led Solera's (the leading InsurTech company) global Corporate Development organization. Prior to Solera, Jon covered Enterprise Software, FinTech and Tech-Enabled Services as an Equity Research Analyst with technology investment bank Needham & Company, LLC.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="w-full py-4 px-4 md:px-8 lg:px-16 text-center text-gray-500 text-sm bg-black bg-opacity-70 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
-        <div class="text-white text-base">2026 | TEK2day</div>
-        <div class="flex space-x-4">
-            <a href="https://www.youtube.com/@TEK2day" target="_blank" aria-label="YouTube" class="text-gray-400 hover:text-red-t2d transition-colors duration-200">
-                <i class="fab fa-youtube fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/tek2dayholdings/" target="_blank" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-500 transition-colors duration-200">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-        </div>
-    </footer>
-
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">×</span>
-            <p id="modalMessage" class="text-white text-lg"></p>
-        </div>
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">
+        <img src="android-chrome-192x192.png" alt="TEK2day">
+        <strong>TEK2day</strong>
+      </a>
+      <nav>
+        <a href="#platforms">Platforms</a>
+        <a href="#products">Products</a>
+        <a href="#content">Content</a>
+        <a href="#founder">Founder</a>
+      </nav>
     </div>
+  </div>
 
-    <script>
-        // Function to show different sections
-        function showSection(sectionName) {
-            // Hide all sections
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Show the selected section
-            const targetSection = document.getElementById(sectionName + '-section');
-            if (targetSection) {
-                targetSection.classList.add('active');
-            }
-        }
+  <div class="hero">
+    <div class="wrap">
+      <div class="kicker">FinTech &middot; AI &middot; Content</div>
+      <h1>TEK<span class="accent">2</span>day</h1>
+      <div class="hero-rule"></div>
+      <p>AI-powered platforms and products</p>
+    </div>
+  </div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const myModal = document.getElementById('myModal');
-            const modalMessage = document.getElementById('modalMessage');
-            const closeButton = document.querySelector('.close-button');
+  <section id="platforms">
+    <div class="wrap">
+      <div class="section-head"><h2>Platforms</h2><div class="rule"></div></div>
+      <div class="platforms">
+        <a class="platform-card" href="https://finance.tek2dayholdings.com/" target="_blank">
+          <span class="tag">Platform</span>
+          <h3>TEK2day Finance</h3>
+          <p>TEK2day Finance is a market data, fundamentals and alternative data platform for institutional and retail investors.</p>
+          <span class="card-link">finance.tek2dayholdings.com</span>
+        </a>
+        <a class="platform-card" href="https://agentkilby.com/" target="_blank">
+          <span class="tag">Platform</span>
+          <h3>Kilby</h3>
+          <p>Kilby is an AI harness for the investment management industry.</p>
+          <span class="card-link">agentkilby.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            // Close the modal when clicking on the close button
-            closeButton.addEventListener('click', () => {
-                myModal.style.display = 'none';
-            });
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head"><h2>Products</h2><div class="rule"></div></div>
+      <div class="cards cards-2">
+        <a class="card" href="https://www.ceorater.com/" target="_blank">
+          <h3>CEORater</h3>
+          <p>Data and analytics that rate public-company CEO performance.</p>
+          <span class="domain">ceorater.com ↗</span>
+        </a>
+        <a class="card" href="https://calendar.tek2dayholdings.com/" target="_blank">
+          <h3>TEK2day Earnings Calendar</h3>
+          <p>A daily calendar of upcoming earnings announcements covering 2,400+ publicly traded companies.</p>
+          <span class="domain">calendar.tek2dayholdings.com ↗</span>
+        </a>
+        <a class="card" href="https://earnings.tek2dayholdings.com/" target="_blank">
+          <h3>TEK2day Earnings Call Sentiment</h3>
+          <p>AI-driven sentiment analysis of public-company earnings calls.</p>
+          <span class="domain">earnings.tek2dayholdings.com ↗</span>
+        </a>
+        <a class="card" href="https://edgar.tek2dayholdings.com/" target="_blank">
+          <h3>TEK2day EDGAR Watcher</h3>
+          <p>Monitoring and alerts for SEC EDGAR filings.</p>
+          <span class="domain">edgar.tek2dayholdings.com ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            // Close the modal when clicking outside of it
-            window.addEventListener('click', (event) => {
-                if (event.target === myModal) {
-                    myModal.style.display = 'none';
-                }
-            });
+  <section id="content">
+    <div class="wrap">
+      <div class="section-head"><h2>Content</h2><div class="rule"></div></div>
+      <div class="cards">
+        <a class="card" href="https://pulse.tek2dayholdings.com/" target="_blank">
+          <h3>TEK2day Pulse</h3>
+          <p>Read TEK2day Pulse for the latest Technology news.</p>
+          <span class="domain">pulse.tek2dayholdings.com ↗</span>
+        </a>
+        <a class="card" href="https://newsletter.tek2dayholdings.com/" target="_blank">
+          <h3>TEK2day Newsletter</h3>
+          <p>Thought leadership at the intersection of Technology and the Capital Markets.</p>
+          <span class="domain">newsletter.tek2dayholdings.com ↗</span>
+        </a>
+        <a class="card" href="https://www.youtube.com/@TEK2day" target="_blank">
+          <h3>TEK2day on YouTube</h3>
+          <p>Video commentary on Technology and the Capital Markets.</p>
+          <span class="domain">youtube.com/@TEK2day ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            // Simple responsive dropdown handling for smaller screens
-            const navItems = document.querySelectorAll('.nav-item');
-            navItems.forEach(item => {
-                const trigger = item.querySelector('a');
-                const menu = item.querySelector('.dropdown-menu');
+  <section id="founder">
+    <div class="wrap">
+      <div class="section-head"><h2>Founder</h2><div class="rule"></div></div>
+      <div class="founder-card">
+        <img src="JM_Potrait_2.jpg" alt="Jon Maietta">
+        <div>
+          <h3>Jon Maietta</h3>
+          <div class="role">Founder &amp; CEO</div>
+          <p><a href="https://www.linkedin.com/in/jonathanmaietta/" target="_blank">Jon Maietta</a> is TEK2day Holdings' founder &amp; CEO. TEK2day owns and operates FinTech platforms, products and content properties, including TEK2day Finance, Kilby, CEORater, EDGAR Watcher, TEK2day Pulse and the TEK2day Newsletter.</p>
+          <p>Prior to TEK2day, Jon led Solera's (the leading InsurTech company) global Corporate Development organization. Prior to Solera, Jon covered Enterprise Software, FinTech and Tech-Enabled Services as an Equity Research Analyst with technology investment bank Needham &amp; Company, LLC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                if (trigger && menu) {
-                    trigger.addEventListener('click', (e) => {
-                        // On smaller screens, prevent navigation and toggle dropdown
-                        if (window.innerWidth < 768) {
-                            e.preventDefault();
-                            // Close other dropdowns
-                            navItems.forEach(otherItem => {
-                                const otherMenu = otherItem.querySelector('.dropdown-menu');
-                                if (otherMenu && otherMenu !== menu) {
-                                    otherMenu.style.display = 'none';
-                                }
-                            });
-                            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+  <footer>
+    <div class="wrap footer-inner">
+      <span class="dot"></span>
+      <span>© 2026 TEK2day Holdings</span>
+      <div class="links">
+        <a href="https://www.youtube.com/@TEK2day" target="_blank">YouTube</a>
+        <a href="https://www.linkedin.com/company/tek2dayholdings/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
-
