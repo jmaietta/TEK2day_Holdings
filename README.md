@@ -14,7 +14,6 @@ Live site: **https://tek2dayholdings.com/**
 - **[CEORater](https://www.ceorater.com/)** — Data and analytics that rate public-company CEO performance.
 - **[TEK2day Earnings Calendar](https://calendar.tek2dayholdings.com/)** — A daily calendar of upcoming earnings announcements covering 2,400+ publicly traded companies.
 - **[TEK2day Earnings Call Sentiment](https://earnings.tek2dayholdings.com/)** — AI-driven sentiment analysis of public-company earnings calls.
-- **[TEK2day EDGAR Watcher](https://edgar.tek2dayholdings.com/)** — Monitoring and alerts for SEC EDGAR filings.
 
 ## Content
 
