@@ -230,7 +230,8 @@
     .platforms { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
     .platform-card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       border: 1px solid var(--line-2);
       background: var(--panel);
       padding: 28px 26px;
@@ -244,7 +245,7 @@
     }
 
     .platform-card .tag {
-      display: inline-block;
+      align-self: flex-start;
       margin-bottom: 14px;
       padding: 3px 8px;
       border: 1px solid var(--amber-dim);
@@ -270,7 +271,7 @@
       margin-bottom: 16px;
     }
 
-    .card-link { color: var(--amber); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
+    .card-link { margin-top: auto; align-self: flex-start; color: var(--amber); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
     .card-link::after { content: " ↗"; }
 
     /* ───── product / content cards ───── */
@@ -278,7 +279,8 @@
     .cards-2 { grid-template-columns: repeat(2, 1fr); }
 
     .card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       border: 1px solid var(--line);
       border-left: 2px solid transparent;
       background: var(--panel);
@@ -308,7 +310,7 @@
       min-height: 44px;
     }
 
-    .card .domain { color: var(--amber-dim); font-size: 12px; letter-spacing: 0.04em; }
+    .card .domain { margin-top: auto; align-self: flex-start; color: var(--amber-dim); font-size: 12px; letter-spacing: 0.04em; }
     .card:hover .domain { color: var(--amber); }
 
     /* ───── founder ───── */
